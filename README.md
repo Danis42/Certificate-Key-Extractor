@@ -6,3 +6,12 @@ Requirements:
 - Database (Mysql/Mariadb)
 - openssl
 - gnupg
+
+
+How to:
+
+1. edit the config file to your needs
+2. change the "path_to_config" in the Web-Imap.py
+3. Run the Web-Imap.py script
+4. ???
+5. Profit
