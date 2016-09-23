@@ -273,7 +273,7 @@ if __name__ == '__main__':
 			else:
 				cur.execute("Update "+read_conf("mysql","table")+" SET pgpkey=\'"+Zertificate[indx].encode('base64')+"\' where email='"+fromMsg[indx]+"';")
 		elif Ztype[indx]=="smimekey":
-			squery = ("Select count(email) from zertifikat WHERE email='"+fromMsg[indx]+"';" )
+			squery = ("Select count(email) from "+read_conf("mysql","table")+" WHERE email='"+fromMsg[indx]+"';" )
 			try:
 				cur.execute(squery)
 			except:
